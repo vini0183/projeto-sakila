@@ -38,8 +38,11 @@
                             <a href="./editar?filme = ${filme.film_id}">
                             <a href="./editar"><button type="button" class="btn btn-outline-info">Editar</button></a>
                             </a>
+
+                            <a href="./excluir?filme = ${filme.film_id}">
                             <button type="button" class="btn btn-outline-danger">Excluir</button>
-                            
+                            </a>
+
                         </td>
                     </tr>
                 </c:forEach>
