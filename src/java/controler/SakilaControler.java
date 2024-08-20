@@ -87,10 +87,12 @@ public class SakilaControler extends HttpServlet {
             request.setAttribute("filmes", ler);
             
             request.getRequestDispatcher("/WEB-INF/jsp/filmes.jsp").forward(request, response);
-        }
+            
+        } 
         
-        processRequest(request, response);
-    }
+        
+    } 
+   
 
     /**
      * Handles the HTTP <code>POST</code> method.
