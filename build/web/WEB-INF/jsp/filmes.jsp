@@ -35,12 +35,12 @@
                         <td>${filme.description}</td>
                         <td>${filme.release_year}</td>
                         <td>
-                            <a href="./editar?filme = ${filme.film_id}">
-                            <a href="./editar"><button type="button" class="btn btn-outline-info">Editar</button></a>
+                            <a href="./editar?filme=${filme.film_id}">
+                                <button type="button" class="btn btn-outline-info">Editar</button>
                             </a>
 
-                            <a href="./excluir?filme = ${filme.film_id}">
-                            <button type="button" class="btn btn-outline-danger">Excluir</button>
+                            <a href="./deletar?filme=${filme.film_id}">
+                            <button type="button" class="btn btn-outline-danger"><i class="fa-solid fa-trash"></i></button>
                             </a>
 
                         </td>
@@ -48,6 +48,7 @@
                 </c:forEach>
                 </tbody>
             </table>
+            <script src="https://kit.fontawesome.com/d4af064d29.js" crossorigin="anonymous"></script>
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body>
 </html>

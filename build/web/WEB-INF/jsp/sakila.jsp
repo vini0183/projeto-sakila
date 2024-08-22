@@ -14,13 +14,15 @@
         <title>JSP Page</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="./Styles/style.css">
+        <link rel="stylesheet" href="./Styles/telainicial.css">
     </head>
     <body>
         <h1>Sakila</h1>
 
+        <div class="btn-container">
         <a href = "./cadastrar"><button type="button" class="btn btn-outline-dark">Cadastrar novo Filme!</button> </a>
         <a href = "./filmes"><button type="button" class="btn btn-outline-dark">Filmes!!</button> </a>
-
+        </div>
         
         
 

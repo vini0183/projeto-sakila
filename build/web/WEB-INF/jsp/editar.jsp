@@ -17,26 +17,27 @@
 
         <h1>Editar Filmes</h1>
 
-        <form action="./editar" method="post" class="container">
+        <form action="./editar?filme=${filme}" method="post" class="container">
             <div class="input-group mb-3">
                 <span class="input-group-text" id="inputGroup-sizing-default">Titulo</span>
-                <input type="text" value="${titulo}" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                <input type="text" value="${titulo}" name="titulo" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
             </div>
 
             <div class="input-group mb-3">
                 <span class="input-group-text" id="inputGroup-sizing-default">Descrição</span>
-                <input type="text" ${descricao} class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                <input type="text" value="${descricao}" name="desc" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
             </div>
 
             <div class="input-group mb-3">
                 <span class="input-group-text" id="inputGroup-sizing-default">Ano</span>
-                <input type="text" ${ano} class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                <input type="text" value="${ano}" name="ano" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+            </div>
+            <div class="btn-container">
+                <button type="submit" class="btn btn-outline-success">EDITAR</button>
             </div>
         </form>
 
-        <div class="btn-container">
-            <button type="button" class="btn btn-outline-success">EDITAR</button>
-        </div>
+        
         
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body>

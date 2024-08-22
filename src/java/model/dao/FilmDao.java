@@ -117,5 +117,31 @@ public class FilmDao {
         }
     }
     
+        public void atualizar(Film filmes) {
+
+        try {
+
+            Connection conexao = Conexao.conectar();
+            PreparedStatement stmt = null;
+
+            stmt = conexao.prepareStatement(
+                    "UPDATE film SET title = ? , description = ?, release_year = ? WHERE film_id = ?"
+            );
+
+            stmt.setString(1, filmes.getTitle());
+            stmt.setString(2, filmes.getDescription());
+            stmt.setInt(3, filmes.getRelease_year());
+            stmt.setInt(4, filmes.getFilm_id());
+
+            stmt.executeUpdate();
+            stmt.close();
+            conexao.close();
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+    }
+    
     
 }
