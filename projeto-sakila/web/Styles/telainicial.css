@@ -1,0 +1,8 @@
+
+.btn-container {
+    width: 100%;
+    display: flex;
+}
+ button {
+    margin: 0 auto;
+}
